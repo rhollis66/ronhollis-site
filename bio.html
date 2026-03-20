@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bio — Ronald L. Hollis, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* NAV FIX - inline override */
+.nav-links a { color: #111 !important; font-weight: 600 !important; }
+.nav-links a:hover, .nav-links a.active { color: #c8943a !important; }
+.mobile-menu a { color: #111 !important; font-weight: 600 !important; }
+.mobile-menu a:hover, .mobile-menu a.active { color: #c8943a !important; }
+/* Force nav links visible at ALL screen sizes */
+@media(max-width:900px) {
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+@media(min-width:901px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none !important; }
+}
+</style>
+</head>
+<body style="padding-top:60px">
+<nav>
+  <a href="index.html" class="nav-logo">Ronald L. Hollis<span>, Ph.D.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html" class="active">Bio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="3d-printing.html">3D Printing</a></li>
+    <li><a href="faq.html">FAQ &amp; Books</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+
+<div class="band reveal">
+  <p class="section-label">About Ron</p>
+  <h2 class="section-title">Ronald L. Hollis, Ph.D.</h2>
+  <div class="divider"></div>
+  <div style="margin-bottom:2rem">
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">Serial Entrepreneur</span>
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">SaaS Expert</span>
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">3D Print Pioneer</span>
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">Patented Inventor</span>
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">Author</span>
+    <span class="cred-tag" style="border-color:rgba(200,148,58,.4);color:rgba(245,240,232,.6)">Ph.D. Engineering</span>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="about-lead">Proven business leader with a focus on <strong>building great companies</strong> — from founding and scaling to successful exits.</p>
+      <div class="about-body">
+        <p>Ron is currently the founder, President &amp; CEO of <strong style="color:var(--gold-light)">MyCaseCare</strong> (mycasecare.com), a technology platform bridging communication between personal injury attorneys and their clients — tracking pain, documents, appointments, and case progress.</p>
+        <p>In 2022, he led the turnaround of <strong style="color:var(--gold-light)">MFG.com</strong> — a company that had raised and lost $80M — transforming it into a powerful manufacturing marketplace sold to <strong style="color:var(--gold-light)">Shapeways (NYSE: SHPW)</strong>.</p>
+        <p>He is the founder and former President &amp; CEO of <strong style="color:var(--gold-light)">Quickparts.com, Inc.</strong> — which revolutionized low-volume manufacturing, served 15,000+ customers with 300,000+ custom parts, and was acquired by <strong style="color:var(--gold-light)">3D Systems (NYSE: DDD)</strong> in 2011.</p>
+        <p>He also leads <strong style="color:var(--gold-light)">FanBladz</strong> (fanbladz.com), supporting high school athletes.</p>
+      </div>
+    </div>
+    <div>
+      <div class="about-body">
+        <p>With focused CEO skills, Ron exhibits strong, diverse capabilities in technology-based business, marketing, sales, and business systems. He applies focused passion, strong discipline, candor, and leadership to develop efficient, scalable operations.</p>
+        <p>His passion is building organizations that can profitably grow while developing leaders — both inside the organization and in the community.</p>
+      </div>
+      <blockquote class="blockquote">"The core values I live by — serving the customer, being disciplined, and continuously improving — are applicable to business and to life."</blockquote>
+      <div class="about-body">
+        <p>He earned a BS in Mechanical Engineering from the University of Alabama, and a MS and Ph.D. in Engineering from the University of Alabama in Huntsville (UAH). He is a <strong style="color:var(--gold-light)">Distinguished Alumni</strong> of the UAH School of Engineering and a non-practicing registered Professional Engineer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="reveal">
+  <p class="section-label">Recognition</p>
+  <h2 class="section-title">Awards &amp; Accomplishments</h2>
+  <div class="divider"></div>
+  <div class="three-col">
+    <div class="card"><div class="card-icon">🏆</div><h4>INC 500</h4><p>Recognized in the first year of eligibility — a testament to the rapid growth of Quickparts.com.</p></div>
+    <div class="card"><div class="card-icon">📈</div><h4>Deloitte Fast 500</h4><p>Three consecutive years: 2005, 2006, and 2007.</p></div>
+    <div class="card"><div class="card-icon">⭐</div><h4>Ernst &amp; Young Entrepreneur of the Year Finalist</h4><p>2004 finalist — one of the most prestigious entrepreneurship honors in the US.</p></div>
+    <div class="card"><div class="card-icon">💡</div><h4>Innovator of the Year</h4><p>2004 Catalyst Magazine. Also Top 50 Entrepreneurs of Atlanta and Hot 100 by Entrepreneur Magazine.</p></div>
+    <div class="card"><div class="card-icon">🔬</div><h4>Patented Inventor</h4><p>US Patent #7,305,637 — Instantaneous Quotation System for Custom Manufactured Parts. Changed industry-wide expectations.</p></div>
+    <div class="card"><div class="card-icon">📚</div><h4>Author &amp; MIT Graduate</h4><p>Author of <em>Better Be Running! Tools to Drive Design Success.</em> Graduate of MIT/INC Birthing of Giants (top 60 entrepreneurs globally).</p></div>
+  </div>
+</section>
+
+<div class="quote-banner reveal">
+  <blockquote>"My passion is building businesses that can make a positive impact on the world by serving customers and developing leaders."</blockquote>
+  <cite>— Ronald L. Hollis, Ph.D.</cite>
+</div>
+
+<footer>
+  <div class="footer-logo">Ronald L. Hollis<span>, Ph.D.</span></div>
+  <div class="footer-copy">© 2026 Ronald L. Hollis. All rights reserved.</div>
+  <nav class="footer-links"><a href="resume.html">Resume</a><a href="3d-printing.html">3D Printing</a><a href="contact.html">Contact</a></nav>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible')},{threshold:.08}).observe(el)})});</script>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="bio.html" class="active">Bio</a>
+  <a href="resume.html">Resume</a>
+  <a href="3d-printing.html">3D Printing</a>
+  <a href="faq.html">FAQ &amp; Books</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="contact.html">Contact</a>
+</div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.hamburger')&&!e.target.closest('.mobile-menu'))document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body></html>

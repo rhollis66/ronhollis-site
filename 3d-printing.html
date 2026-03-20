@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>3D Printing — Ronald L. Hollis, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.blog-post{padding:2rem 0;border-bottom:1px solid rgba(200,148,58,.15)}
+.blog-post:last-child{border-bottom:none}
+.blog-post .bdate{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.15em;color:var(--mid);margin-bottom:.6rem}
+.blog-post h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:.7rem}
+.blog-post p{font-size:.9rem;color:var(--slate);line-height:1.7}
+</style>
+<style>
+/* NAV FIX - inline override */
+.nav-links a { color: #111 !important; font-weight: 600 !important; }
+.nav-links a:hover, .nav-links a.active { color: #c8943a !important; }
+.mobile-menu a { color: #111 !important; font-weight: 600 !important; }
+.mobile-menu a:hover, .mobile-menu a.active { color: #c8943a !important; }
+/* Force nav links visible at ALL screen sizes */
+@media(max-width:900px) {
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+@media(min-width:901px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none !important; }
+}
+</style>
+</head>
+<body style="padding-top:60px">
+<nav>
+  <a href="index.html" class="nav-logo">Ronald L. Hollis<span>, Ph.D.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="3d-printing.html" class="active">3D Printing</a></li>
+    <li><a href="faq.html">FAQ &amp; Books</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+
+<div class="band reveal">
+  <p class="section-label">Expertise</p>
+  <h2 class="section-title">3D Printing · Rapid Prototyping · Additive Manufacturing</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div>
+      <p class="about-lead">Involved in this industry since <strong>1992</strong> — from seeing my first SLA-250 at Boeing to founding one of the most impactful companies in the field's history.</p>
+      <div class="about-body">
+        <p>I work with manufacturers, service providers, and Wall Street investors to leverage 30+ years of industry experience — reducing mistakes and solving tough business problems.</p>
+        <p>It's fascinating how many new entrants are making basic mistakes and solving problems that were already solved in the 90s. My value is providing that institutional knowledge and grounded perspective.</p>
+        <p>I consult Wall Street investors on current market maturation and future opportunities. Understanding where this industry is truly headed requires someone who was there from the beginning.</p>
+      </div>
+      <p style="margin-top:2rem;font-size:.87rem"><a href="contact.html" style="color:var(--gold-light);border-bottom:1px solid var(--gold-light);text-decoration:none">Contact Ron to discuss your 3D printing challenge →</a></p>
+    </div>
+    <div>
+      <p style="color:rgba(245,240,232,.4);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.2rem">30+ Year Industry Milestones</p>
+      <div class="milestone">
+        <h4>First Build Time Estimator</h4>
+        <p>Developed one of the first build time estimators for 3D printing — providing accurate scheduling in an era when everyone was making wild guesses.</p>
+      </div>
+      <div class="milestone">
+        <h4>First Value-Added Reseller (VAR)</h4>
+        <p>Founded one of the first VARs for 3D printers — the Actua and Thermojet (MJM) systems by 3D Systems, predecessors to today's Projet line.</p>
+      </div>
+      <div class="milestone">
+        <h4>Patented Instant Quoting</h4>
+        <p>US Patent #7,305,367 — Instantaneous price quotation for custom manufactured parts. Enabled true e-commerce for custom 3D printed parts for the first time.</p>
+      </div>
+      <div class="milestone">
+        <h4>Founder, Quickparts.com</h4>
+        <p>Applied patented technology to transform the industry — allowing designers worldwide to quote and buy custom parts anytime, from anywhere.</p>
+      </div>
+      <div class="milestone">
+        <h4>Author: Better Be Running!</h4>
+        <p>Written for common users to better apply additive manufacturing in product development. Contact Ron to request a free e-copy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="reveal">
+  <p class="section-label">Ron's Blog</p>
+  <h2 class="section-title">Perspectives on 3D Printing</h2>
+  <div class="divider"></div>
+  <div class="blog-post">
+    <p class="bdate">Sep 30, 2014</p>
+    <h4>On Netflix's "Print the Legend"</h4>
+    <p>This documentary was an absolute injustice to the power and beauty of 3D Printing — a soap opera that illuminated a few neophytes instead of honoring the true pioneers. Where's the story about Hull and Crump and the countless others that spent their careers building an industry? The only real credibility was Avi Reichental. Real innovation isn't about repackaging others' intellectual property under "open-source" pretenses.</p>
+  </div>
+  <div class="blog-post">
+    <p class="bdate">Jun 13, 2013</p>
+    <h4>3D Printing and Open Source</h4>
+    <p>The adoption of open source receives the most support from those who don't have much innovation to share. Once they develop something of true value, they quickly change their position — Makerbot's Replicator 2 is a pertinent example. Real companies are less inclined to give their innovation away since they made a real investment to create it.</p>
+  </div>
+  <div class="blog-post">
+    <p class="bdate">Jun 12, 2013</p>
+    <h4>3D Printing and China</h4>
+    <p>The vast majority of AM innovation has originated and evolved out of the US and Germany. The largest known production factories leveraging AM are in the US. Throwing out an edict to "mature your RP technology" is out of sync with current reality. The operative word is innovation — not duplication or replication. Change is imminent, but the first step would be to catch up.</p>
+  </div>
+</section>
+
+<div class="quote-banner reveal">
+  <blockquote>"I saw a SLA-250 working away one day and fell in love. From that point on, I was committed to working with the technology."</blockquote>
+  <cite>— Ronald L. Hollis, Ph.D., on discovering 3D printing at Boeing, 1992</cite>
+</div>
+
+<footer>
+  <div class="footer-logo">Ronald L. Hollis<span>, Ph.D.</span></div>
+  <div class="footer-copy">© 2026 Ronald L. Hollis. All rights reserved.</div>
+  <nav class="footer-links"><a href="bio.html">Bio</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible')},{threshold:.08}).observe(el)})});</script>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Bio</a>
+  <a href="resume.html">Resume</a>
+  <a href="3d-printing.html" class="active">3D Printing</a>
+  <a href="faq.html">FAQ &amp; Books</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="contact.html">Contact</a>
+</div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.hamburger')&&!e.target.closest('.mobile-menu'))document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body></html>

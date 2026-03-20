@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact — Ronald L. Hollis, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* NAV FIX - inline override */
+.nav-links a { color: #111 !important; font-weight: 600 !important; }
+.nav-links a:hover, .nav-links a.active { color: #c8943a !important; }
+.mobile-menu a { color: #111 !important; font-weight: 600 !important; }
+.mobile-menu a:hover, .mobile-menu a.active { color: #c8943a !important; }
+/* Force nav links visible at ALL screen sizes */
+@media(max-width:900px) {
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+@media(min-width:901px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none !important; }
+}
+</style>
+</head>
+<body style="padding-top:60px">
+<nav>
+  <a href="index.html" class="nav-logo">Ronald L. Hollis<span>, Ph.D.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="3d-printing.html">3D Printing</a></li>
+    <li><a href="faq.html">FAQ &amp; Books</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+
+<section class="reveal">
+  <p class="section-label">Get in Touch</p>
+  <h2 class="section-title">Let's Talk</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div>
+      <p style="color:var(--mid);margin-bottom:1.2rem;font-size:.97rem;line-height:1.75">Whether you're looking for consulting support, 3D printing expertise, speaking engagements, or simply want to connect — I'd be glad to hear from you.</p>
+      <p style="color:var(--mid);margin-bottom:1.2rem;font-size:.97rem;line-height:1.75">My primary rule applies here too: come prepared to put in the work. The best conversations happen between people who are genuinely committed to getting better.</p>
+      <blockquote style="font-family:'Playfair Display',serif;font-size:1.25rem;font-style:italic;border-left:3px solid var(--gold);padding-left:1.8rem;color:var(--slate);margin:2rem 0;line-height:1.5">"Please feel free to reach out — I look forward to understanding your challenges."</blockquote>
+      <div style="margin-top:2rem">
+        <p style="font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem">Email</p>
+        <p><a href="mailto:ron@ronhollis.com" style="color:var(--ink);font-size:1rem;text-decoration:none;border-bottom:1px solid var(--gold)">ron@ronhollis.com</a></p>
+      </div>
+      <div style="margin-top:1.5rem">
+        <p style="font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Current Ventures</p>
+        <p style="font-size:.9rem;color:var(--mid);margin-bottom:.4rem">MyCaseCare — <a href="http://www.mycasecare.com" target="_blank" style="color:var(--gold)">mycasecare.com</a></p>
+        <p style="font-size:.9rem;color:var(--mid)">FanBladz — <a href="http://www.fanbladz.com" target="_blank" style="color:var(--gold)">fanbladz.com</a></p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your message…" required></textarea>
+      <button type="submit" class="btn-primary" style="align-self:flex-start">Send Message</button>
+      <p id="form-msg" style="display:none;font-size:.85rem;color:var(--gold)">Thanks! Ron will be in touch soon.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Ronald L. Hollis<span>, Ph.D.</span></div>
+  <div class="footer-copy">© 2026 Ronald L. Hollis. All rights reserved.</div>
+  <nav class="footer-links"><a href="bio.html">Bio</a><a href="resume.html">Resume</a><a href="3d-printing.html">3D Printing</a></nav>
+</footer>
+<script>
+function handleSubmit(e){e.preventDefault();document.getElementById('form-msg').style.display='block';e.target.reset()}
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible')},{threshold:.08}).observe(el)})});
+</script>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Bio</a>
+  <a href="resume.html">Resume</a>
+  <a href="3d-printing.html">3D Printing</a>
+  <a href="faq.html">FAQ &amp; Books</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.hamburger')&&!e.target.closest('.mobile-menu'))document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body></html>

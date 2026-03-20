@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Resume — Ronald L. Hollis, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>.res-grid{display:grid;grid-template-columns:280px 1fr;gap:5rem}@media(max-width:900px){.res-grid{grid-template-columns:1fr}}</style>
+<style>
+/* NAV FIX - inline override */
+.nav-links a { color: #111 !important; font-weight: 600 !important; }
+.nav-links a:hover, .nav-links a.active { color: #c8943a !important; }
+.mobile-menu a { color: #111 !important; font-weight: 600 !important; }
+.mobile-menu a:hover, .mobile-menu a.active { color: #c8943a !important; }
+/* Force nav links visible at ALL screen sizes */
+@media(max-width:900px) {
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+@media(min-width:901px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none !important; }
+}
+</style>
+</head>
+<body style="padding-top:60px">
+<nav>
+  <a href="index.html" class="nav-logo">Ronald L. Hollis<span>, Ph.D.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="resume.html" class="active">Resume</a></li>
+    <li><a href="3d-printing.html">3D Printing</a></li>
+    <li><a href="faq.html">FAQ &amp; Books</a></li>
+    <li><a href="quotes.html">Quotes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+
+<div class="band reveal">
+  <p class="section-label">Career</p>
+  <h2 class="section-title">Professional Experience</h2>
+  <div class="divider"></div>
+  <p style="color:rgba(245,240,232,.6);max-width:680px;margin-bottom:3rem">Over 25 years as an executive leader driving strategic growth and positive returns for technology businesses — from start-up to successful exit.</p>
+  <div class="res-grid">
+    <div class="res-sidebar">
+      <h3>Core Competencies</h3>
+      <ul><li>Strategic Planning &amp; Execution</li><li>Technology-Based Business</li><li>21st Century Marketing &amp; Sales</li><li>Investor Relations &amp; M&amp;A</li><li>Team Building &amp; Leadership</li><li>3D Printing / Additive Manufacturing</li><li>SaaS Business Models</li><li>Business Turnaround</li></ul>
+      <h3>Education</h3>
+      <ul><li>Ph.D. Systems Engineering (Business Mgmt) — UAH</li><li>MS Engineering Management — UAH</li><li>BS Mechanical Engineering — Univ. of Alabama</li><li>MIT Birthing of Giants — 3-year program</li></ul>
+      <h3>Accomplishments</h3>
+      <ul><li>Author: Better Be Running!</li><li>US Patent #7,305,637</li><li>UAH Distinguished Alumni</li><li>YEO Atlanta President (2 yrs)</li><li>YPO Member</li><li>INC 500 · Deloitte Fast 500 · E&amp;Y Finalist</li></ul>
+      <h3>Personal</h3>
+      <ul><li>Private Pilot</li><li>Avid reader of business &amp; life books</li><li>Boating &amp; travel enthusiast</li><li>Passionate about helping others reach their potential</li></ul>
+    </div>
+    <div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Founder, President &amp; CEO</div><div class="job-co">MyCaseCare — Atlanta, GA</div></div><span class="job-date">2022 — Present</span></div>
+        <p class="job-desc">Building a communication bridge between personal injury attorneys and their clients. The platform allows real-time collaboration on pain documentation, case files, appointments, and case progress.</p>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">President &amp; CEO</div><div class="job-co">MFG.com — Atlanta, GA</div></div><span class="job-date">2017 — 2022</span></div>
+        <p class="job-desc">World-leading marketplace connecting custom part manufacturers with product development buyers. Joined to transform a struggling technology platform into a focused, profitable business.</p>
+        <ul class="job-bullets">
+          <li>Rebuilt entire technology stack from legacy server-based to cloud architecture</li>
+          <li>Rebuilt executive team and redeveloped overall business strategy</li>
+          <li>Maintained customer base and ARR during full platform rebuild</li>
+          <li>Successfully sold the business to Shapeways (NYSE: SHPW)</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Founder, President &amp; CEO</div><div class="job-co">Quickparts.com, Inc. — Atlanta, GA</div></div><span class="job-date">1999 — 2011</span></div>
+        <p class="job-desc">Founded a paradigm-shifting company that changed the way engineers buy custom parts. Used patented online instant-quoting technology to serve 15,000+ customers with 300,000+ custom parts. Sold to 3D Systems (NYSE: DDD) in 2011.</p>
+        <ul class="job-bullets">
+          <li>Grew from start-up to $30M revenue; sold at very favorable valuation</li>
+          <li>Achieved $1M+ revenue in the first year of operation</li>
+          <li>INC 500 first year of eligibility; Deloitte Fast 500 three consecutive years</li>
+          <li>Expanded operations to Australia and China</li>
+          <li>Raised funding from angels, strategic investors, and venture capital</li>
+          <li>Developed industry-leading Net Promoter Score customer loyalty program</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Founder, President &amp; CEO</div><div class="job-co">Rapid Tech Engineering, Inc. — Huntsville, AL</div></div><span class="job-date">1997 — 1999</span></div>
+        <p class="job-desc">Engineering services firm and one of the first value-added resellers of 3D printers. Predecessor to Quickparts.com. Developed territory and sales strategies for 3D printer technology across the engineering community.</p>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Acting President</div><div class="job-co">Fastec Engineering, Inc. — Huntsville, AL</div></div><span class="job-date">1995 — 1997</span></div>
+        <p class="job-desc">Took over as Acting President of a near-bankrupt design and manufacturing company. Re-engineered operations, upgraded the team, invested in new equipment — achieving 100%+ revenue growth and positive cash flow within 9 months. Sold to Dynetics in 1997.</p>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Director</div><div class="job-co">AIDT — Alabama Center for Advanced Technology, Huntsville, AL</div></div><span class="job-date">1993 — 1995</span></div>
+        <p class="job-desc">Director of the advanced manufacturing and technology center for Alabama. Consulted hundreds of companies on business operations, technology strategies, and business re-engineering.</p>
+      </div>
+      <div class="job">
+        <div class="job-hd"><div><div class="job-title">Design Engineer</div><div class="job-co">Boeing — Huntsville, AL</div></div><span class="job-date">1990 — 1993</span></div>
+        <p class="job-desc">Design engineer on Space Station Freedom. Responsible for systems design, logistics analysis, and mechanical design. Gained foundational experience in large-scale complex program management.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Ronald L. Hollis<span>, Ph.D.</span></div>
+  <div class="footer-copy">© 2026 Ronald L. Hollis. All rights reserved.</div>
+  <nav class="footer-links"><a href="bio.html">Bio</a><a href="3d-printing.html">3D Printing</a><a href="contact.html">Contact</a></nav>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible')},{threshold:.08}).observe(el)})});</script>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Bio</a>
+  <a href="resume.html" class="active">Resume</a>
+  <a href="3d-printing.html">3D Printing</a>
+  <a href="faq.html">FAQ &amp; Books</a>
+  <a href="quotes.html">Quotes</a>
+  <a href="contact.html">Contact</a>
+</div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.hamburger')&&!e.target.closest('.mobile-menu'))document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body></html>

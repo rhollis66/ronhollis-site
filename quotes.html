@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Favorite Quotes — Ronald L. Hollis, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>.quotes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}@media(max-width:900px){.quotes-grid{grid-template-columns:1fr}}</style>
+<style>
+/* NAV FIX - inline override */
+.nav-links a { color: #111 !important; font-weight: 600 !important; }
+.nav-links a:hover, .nav-links a.active { color: #c8943a !important; }
+.mobile-menu a { color: #111 !important; font-weight: 600 !important; }
+.mobile-menu a:hover, .mobile-menu a.active { color: #c8943a !important; }
+/* Force nav links visible at ALL screen sizes */
+@media(max-width:900px) {
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+@media(min-width:901px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none !important; }
+}
+</style>
+</head>
+<body style="padding-top:60px">
+<nav>
+  <a href="index.html" class="nav-logo">Ronald L. Hollis<span>, Ph.D.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="3d-printing.html">3D Printing</a></li>
+    <li><a href="faq.html">FAQ &amp; Books</a></li>
+    <li><a href="quotes.html" class="active">Quotes</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+<button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+
+<section class="reveal">
+  <p class="section-label">Wisdom</p>
+  <h2 class="section-title">Ron's Favorite Quotes</h2>
+  <div class="divider"></div>
+  <p style="color:var(--mid);max-width:560px;margin-bottom:3rem">Shared with the desire to expose something new to the reader. If you have a great quote that's missing, please share it.</p>
+  <div class="quotes-grid">
+    <div class="quote-card"><p class="qt">"Where your FOCUS GOES, ENERGY FLOWS."</p><p class="qa">Tony Robbins</p></div>
+    <div class="quote-card"><p class="qt">"It is not necessary to change. Survival is not mandatory."</p><p class="qa">W. Edwards Deming</p></div>
+    <div class="quote-card"><p class="qt">"I hate to lose more than I love to win."</p><p class="qa">Jimmy Connors</p></div>
+    <div class="quote-card"><p class="qt">"The quality of a person's life is in direct proportion to their commitment to excellence, regardless of their chosen field of endeavor."</p><p class="qa">Vince Lombardi</p></div>
+    <div class="quote-card"><p class="qt">"If your actions inspire others to dream more, learn more, do more and become more, you are a leader."</p><p class="qa">John Quincy Adams</p></div>
+    <div class="quote-card"><p class="qt">"You are what you repeatedly do. Excellence is not an event — it is a HABIT."</p><p class="qa">Aristotle</p></div>
+    <div class="quote-card"><p class="qt">"In any moment of decision, the best thing you can do is the right thing, the next best is the wrong thing, and the worst thing you can do is nothing."</p><p class="qa">Teddy Roosevelt</p></div>
+    <div class="quote-card"><p class="qt">"Our chief want is someone who will inspire us to be what we know we could be."</p><p class="qa">Ralph Waldo Emerson</p></div>
+    <div class="quote-card"><p class="qt">"Pain of discipline OR pain of disappointment — which one is greater?"</p><p class="qa">Ron Hollis</p></div>
+    <div class="quote-card"><p class="qt">"Luck is at the corner of opportunity and preparedness."</p><p class="qa">Ron Hollis</p></div>
+    <div class="quote-card"><p class="qt">"The performance of one's life is the consequence of a series of decisions made every day."</p><p class="qa">Ron Hollis</p></div>
+    <div class="quote-card"><p class="qt">"The world is filled with people that want their life to be different, but are unwilling to do different things with their lives."</p><p class="qa">Ron Hollis</p></div>
+    <div class="quote-card"><p class="qt">"Leadership is based on a spiritual quality — the power to inspire others to follow."</p><p class="qa">Vince Lombardi</p></div>
+    <div class="quote-card"><p class="qt">"At the most basic level, systems help bring order to the natural messiness of human enterprises."</p><p class="qa">J.W. Marriott</p></div>
+    <div class="quote-card" style="grid-column:1/-1"><p class="qt" style="font-size:1.05rem">"Thoughts create FEELINGS · Feelings create ACTIONS · Actions create OUTCOMES. Head · Heart · Hands."</p><p class="qa">Jim Kwik</p></div>
+  </div>
+</section>
+
+<div class="quote-banner reveal">
+  <blockquote>"Plan your Life. LIVE YOUR PLAN. Live, Love, and Learn."</blockquote>
+  <cite>— Ronald L. Hollis, Ph.D.</cite>
+</div>
+
+<footer>
+  <div class="footer-logo">Ronald L. Hollis<span>, Ph.D.</span></div>
+  <div class="footer-copy">© 2026 Ronald L. Hollis. All rights reserved.</div>
+  <nav class="footer-links"><a href="bio.html">Bio</a><a href="faq.html">FAQ &amp; Books</a><a href="contact.html">Contact</a></nav>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.reveal').forEach(el=>{new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible')},{threshold:.08}).observe(el)})});</script>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Bio</a>
+  <a href="resume.html">Resume</a>
+  <a href="3d-printing.html">3D Printing</a>
+  <a href="faq.html">FAQ &amp; Books</a>
+  <a href="quotes.html" class="active">Quotes</a>
+  <a href="contact.html">Contact</a>
+</div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.hamburger')&&!e.target.closest('.mobile-menu'))document.getElementById('mobileMenu').classList.remove('open');});</script>
+</body></html>
